@@ -1,0 +1,25 @@
+asdsdrweq
+qkendjk
+1231842
+xncvmzx
+hola@____
+asd.com
+@asdsad.net
+plainaddress
+@example.com
+Joe Smith <email@example.com>
+email.example.com
+email@example@example.com
+.email@example.com
+email.@example.com
+email..email@example.com
+email@example.com (Joe Smith)
+email@example
+email@-example.com
+email@example.web
+email@111.222.333.44444
+email@example..com
+Abc..123@example.com
+email @-example.com
+email@ example.web
+email @ 111.222.333.44444
