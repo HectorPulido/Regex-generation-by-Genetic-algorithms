@@ -1,20 +1,20 @@
-import re
+import regex
 
 def read_from_file(file_name):
     f = open(file_name, "r", encoding="utf8")
     return f.read().strip().split("\n")
 
 def generate_regex_score_function(examples_positive, examples_negative):
-    def validate_score(regex):
+    def validate_score(string):
         score_positive = 0
         score_negative = 0
         min_score = -(len(examples_negative) + 1)
 
-        regex = regex.replace("ª", "")
+        string = string.replace("ª", "")
 
         for example in examples_positive:
             try:
-                result = re.search(regex, example)
+                result = regex.search(string, example)
             except:
                 return min_score
             if result and result[0] == example:
@@ -23,7 +23,7 @@ def generate_regex_score_function(examples_positive, examples_negative):
 
         for example in examples_negative:
             try:
-                result = re.search(regex, example)
+                result = regex.search(string, example)
             except:
                 return min_score
             if result and result[0] == example:
